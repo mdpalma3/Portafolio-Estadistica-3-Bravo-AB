@@ -166,7 +166,7 @@ function renderInicio() {
     ${kpiHTML("fa-user-graduate", DATOS_PORTAFOLIO.estudiantes.length, "Cadetes matriculados", null)}
     ${kpiHTML("fa-star", promedioGeneral, "Promedio general del curso", promedioGeneral >= 7.5 ? "arriba" : "abajo")}
     ${kpiHTML("fa-folder-open", totalDocs, "Documentos publicados", null)}
-    ${kpiHTML("fa-layer-group", "4", "Unidades activas", null)}
+    ${kpiHTML("fa-layer-group", DATOS_PORTAFOLIO.unidades.length, "Unidades activas", null)}
   `;
   frag.appendChild(kpis);
 
