@@ -152,8 +152,7 @@ const DATOS_PORTAFOLIO = {
         Complementario: [{ nombre: "U3_Tablas_Estadisticas.pdf", tipo: "pdf", tam: "120 KB", fecha: "2026-04-06" }],
       },
     },
-   },
-  ],
+ ],
 
   recursosAdicionales: [
     { nombre: "Simulador de distribuciones", icono: "fa-shuffle", tipo: "enlace", categoria: "Simuladores" },
