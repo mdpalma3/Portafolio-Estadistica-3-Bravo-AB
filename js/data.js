@@ -21,7 +21,6 @@ const DATOS_PORTAFOLIO = {
     institucionNombre: "Escuela Superior Naval",
     periodo: "Periodo Académico 2026",
   },
-
   // ---------------------------------------------------------------------
   // 1. PLANIFICACIÓN ACADÉMICA
   // Cada objeto es una "carpeta". "archivos" es la lista de documentos o
@@ -105,7 +104,6 @@ const DATOS_PORTAFOLIO = {
       ],
     },
   ],
-
   // ---------------------------------------------------------------------
   // 2. MATERIAL DIDÁCTICO
   // Cada unidad tiene sub-carpetas fijas: presentaciones, guias, talleres,
