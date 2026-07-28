@@ -61,7 +61,7 @@ function alternarTema() {
 const TITULOS_SECCION = {
   inicio: { titulo: "Panel General", icono: "fa-gauge-high", desc: "Resumen general del curso 3.º Bravo/AB." },
   planificacion: { titulo: "Planificación Académica", icono: "fa-clipboard-list", desc: "Documentos de organización curricular de la asignatura." },
-  material: { titulo: "Material Didáctico", icono: "fa-layer-group", desc: "Contenido de las 4 unidades y recursos adicionales." },
+  material: { titulo: "Material Didáctico", icono: "fa-layer-group", desc: "Contenido de las 3 unidades y recursos adicionales." },
   mejoras: { titulo: "Plan de Mejoras", icono: "fa-chart-line", desc: "Seguimiento al desempeño académico y acciones de refuerzo." },
   calificaciones: { titulo: "Calificaciones", icono: "fa-table-list", desc: "Registro de notas y desempeño del curso." },
 };
