@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio Virtual · Estadística para Ciencias Navales</title>
+<meta name="description" content="Portafolio virtual académico de la asignatura Estadística para Ciencias Navales.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Chart.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- =========================================================================
+     PORTADA
+     ========================================================================= -->
+<section id="portada">
+  <div class="lineas-carta"></div>
+  <svg class="rosa-viento" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="100" cy="100" r="96" fill="none" stroke="#E7C766" stroke-width="0.6"/>
+    <circle cx="100" cy="100" r="72" fill="none" stroke="#E7C766" stroke-width="0.4"/>
+    <g stroke="#E7C766" stroke-width="0.5">
+      <line x1="100" y1="4" x2="100" y2="196"/>
+      <line x1="4" y1="100" x2="196" y2="100"/>
+      <line x1="24" y1="24" x2="176" y2="176"/>
+      <line x1="176" y1="24" x2="24" y2="176"/>
+    </g>
+    <polygon points="100,10 108,92 100,100 92,92" fill="#E7C766"/>
+    <polygon points="100,190 108,108 100,100 92,108" fill="#E7C766"/>
+    <polygon points="10,100 92,92 100,100 92,108" fill="#E7C766"/>
+    <polygon points="190,100 108,92 100,100 108,108" fill="#E7C766"/>
+    <circle cx="100" cy="100" r="4" fill="#E7C766"/>
+  </svg>
+
+  <div class="portada-contenido">
+    <span class="portada-eyebrow"><i class="fa-solid fa-anchor"></i> Portafolio Virtual</span>
+    <h1>Estadística <span>para</span> Ciencias Navales</h1>
+    <p class="portada-sub">Un espacio digital para navegar la planificación, el material didáctico y el desempeño académico del curso.</p>
+
+    <div class="portada-meta">
+      <span class="chip">Materia: <b data-campo="materia">—</b></span>
+      <span class="chip">Docente: <b data-campo="docente">—</b></span>
+      <span class="chip">Curso: <b data-campo="curso">—</b></span>
+    </div>
+
+    <button id="btn-ingresar" class="btn-ingresar">
+      Ingresar al Portafolio <i class="fa-solid fa-arrow-right"></i>
+    </button>
+
+    <div class="portada-iconos">
+      <span><i class="fa-solid fa-chart-simple"></i>Estadística</span>
+      <span><i class="fa-solid fa-magnifying-glass-chart"></i>Análisis de datos</span>
+      <span><i class="fa-solid fa-water"></i>Ciencias Navales</span>
+      <span><i class="fa-solid fa-chart-pie"></i>Gráficos</span>
+      <span><i class="fa-solid fa-microchip"></i>Tecnología</span>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================================
+     APP SHELL (Dashboard)
+     ========================================================================= -->
+<div id="app-shell">
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-marca">
+      <div class="escudo"><i class="fa-solid fa-anchor"></i></div>
+      <div class="texto-marca">
+        <strong>Portafolio Naval</strong>
+        <small data-campo="curso">Curso —</small>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="grupo-titulo">Navegación</div>
+      <div class="nav-item activo" data-seccion="inicio"><i class="fa-solid fa-gauge-high"></i><span>Panel General</span></div>
+
+      <div class="grupo-titulo">Módulos</div>
+      <div class="nav-item" data-seccion="planificacion"><i class="fa-solid fa-clipboard-list"></i><span>Planificación Académica</span></div>
+      <div class="nav-item" data-seccion="material"><i class="fa-solid fa-layer-group"></i><span>Material Didáctico</span></div>
+      <div class="nav-item" data-seccion="mejoras"><i class="fa-solid fa-chart-line"></i><span>Plan de Mejoras</span></div>
+      <div class="nav-item" data-seccion="calificaciones"><i class="fa-solid fa-table-list"></i><span>Calificaciones</span></div>
+    </nav>
+
+    <div class="sidebar-pie" data-campo="periodo">Periodo —</div>
+  </aside>
+
+  <!-- Contenido -->
+  <div class="contenido">
+    <header class="topbar">
+      <button class="btn-icono" id="btn-menu-movil" title="Abrir menú" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+      <button class="btn-icono" id="btn-colapsar" title="Plegar / expandir menú" aria-label="Plegar menú"><i class="fa-solid fa-angles-left"></i></button>
+      <button class="btn-icono" id="btn-inicio-topbar" title="Ir al inicio" aria-label="Ir al inicio"><i class="fa-solid fa-house"></i></button>
+
+      <nav class="breadcrumbs" aria-label="Ruta de navegación">
+        <i class="fa-solid fa-anchor"></i>
+        <span>Portafolio</span>
+        <i class="fa-solid fa-chevron-right" style="font-size:9px;"></i>
+        <span class="activo-crumb" id="crumb-actual">Panel General</span>
+      </nav>
+
+      <div class="buscador">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="campo-busqueda" placeholder="Buscar documentos... (Enter)">
+      </div>
+
+      <div class="topbar-derecha">
+        <button class="btn-icono" id="btn-tema" title="Cambiar modo claro/oscuro" aria-label="Cambiar tema">
+          <i class="fa-solid fa-moon" id="icono-tema"></i>
+        </button>
+        <div class="perfil-usuario">
+          <div class="avatar">MP</div>
+          <div class="nombre" data-campo="docente">—<small>Docente</small></div>
+        </div>
+      </div>
+    </header>
+
+    <main class="area-principal" id="area-principal">
+      <!-- Contenido dinámico inyectado por app.js -->
+    </main>
+
+    <footer class="pie-institucional">
+      <span><i class="fa-solid fa-anchor"></i> <span data-campo="institucion">Escuela Superior Naval</span> — Portafolio Virtual © <span id="anio-actual"></span></span>
+      <span data-campo="materia">Estadística para Ciencias Navales</span>
+    </footer>
+  </div>
+</div>
+
+<!-- Botón flotante volver arriba -->
+<button class="btn-arriba" id="btn-arriba" title="Volver arriba" aria-label="Volver arriba"><i class="fa-solid fa-chevron-up"></i></button>
+
+<!-- Modal de vista previa -->
+<div class="modal-fondo" id="modal-preview">
+  <div class="modal-caja">
+    <div class="modal-encabezado">
+      <h3 id="modal-titulo">Documento</h3>
+      <button class="modal-cerrar" onclick="cerrarModal()" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="modal-cuerpo" id="modal-cuerpo-contenido"></div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
