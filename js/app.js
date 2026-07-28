@@ -192,7 +192,7 @@ function renderInicio() {
   rejilla.className = "rejilla-tarjetas";
   rejilla.innerHTML = `
     ${accesoRapidoHTML("planificacion", "fa-clipboard-list", "Planificación Académica", "Sílabo, cronograma y competencias.")}
-    ${accesoRapidoHTML("material", "fa-layer-group", "Material Didáctico", "Contenido de las 4 unidades del curso.")}
+    ${accesoRapidoHTML("material", "fa-layer-group", "Material Didáctico", "Contenido de las 3 unidades del curso.")}
     ${accesoRapidoHTML("mejoras", "fa-chart-line", "Plan de Mejoras", "Diagnóstico, seguimiento y evidencias.")}
     ${accesoRapidoHTML("calificaciones", "fa-table-list", "Calificaciones", "Notas, promedios y evolución del curso.")}
   `;
