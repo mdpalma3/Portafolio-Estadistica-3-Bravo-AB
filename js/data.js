@@ -38,6 +38,7 @@ const DATOS_PORTAFOLIO = {
         // Si un archivo no tiene "ruta", el portafolio lo muestra como
         // "pendiente de carga" (ver README.md, sección "Subir archivos reales").
         { nombre: "for_silabo_v3_ESTADISTICA_Jul26_NRC-signed.pdf", tipo: "pdf", tam: "482 KB", fecha: "2026-03-02", ruta: "documentos/planificacion/for_silabo_v3_ESTADISTICA_Jul26_NRC-signed.pdf" },
+         { nombre: "2.2. ESTADISTICA programacion academica 2026 2_NRC 2998 MPALMA-signed.pdf", tipo: "pdf", tam: "482 KB", fecha: "2026-03-02", ruta: "documentos/planificacion/2.2. ESTADISTICA programacion academica 2026 2_NRC 2998 MPALMA-signed.pdf" },
       ],
     },
     {
