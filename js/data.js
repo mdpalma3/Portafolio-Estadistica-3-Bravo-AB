@@ -36,7 +36,7 @@ const DATOS_PORTAFOLIO = {
         // "ruta" apunta a un archivo REAL dentro de la carpeta documentos/.
         // Si un archivo no tiene "ruta", el portafolio lo muestra como
         // "pendiente de carga" (ver README.md, sección "Subir archivos reales").
-        { nombre: "for_silabo_v3_ESTADISTICA_Jul26_NRC-signed.pdf", tipo: "pdf", tam: "482 KB", fecha: "2026-03-02", ruta: "documentos/planificacion/for_silabo_v3_ESTADISTICA_Jul26_NRC-signed.pdf" },        
+        { nombre: "1.1_Sílabo_Estadística_2026_-signed-signed.pdf", tipo: "pdf", tam: "482 KB", fecha: "2026-03-02", ruta: "documentos/planificacion/1.1_Sílabo_Estadística_2026_-signed-signed.pdf" },        
       ],
     },
     {
@@ -45,7 +45,7 @@ const DATOS_PORTAFOLIO = {
       titulo: "Programación académica",
       desc: "Desglose detallado de unidades, horas y estrategias didácticas.",
       archivos: [
-        { nombre: "2.2. ESTADISTICA programacion academica 2026 2_NRC 2998 MPALMA-signed.pdf", tipo: "pdf", tam: "482 KB", fecha: "2026-03-02", ruta: "documentos/planificacion/2.2. ESTADISTICA programacion academica 2026 2_NRC 2998 MPALMA-signed.pdf" },
+        { nombre: "1.2_Programación Académica_Estadística_2026-signed-signed.pdf", tipo: "pdf", tam: "482 KB", fecha: "2026-03-02", ruta: "documentos/planificacion/1.2_Programación Académica_Estadística_2026-signed-signed.pdf" },
       ],
     },
     {
@@ -54,7 +54,7 @@ const DATOS_PORTAFOLIO = {
       titulo: "Planes de clases ESSUNA",
       desc: "Planificación organizada de las sesiones de clase para el desarrollo efectivo de la asignatura.",
       archivos: [
-        { nombre: "Plan de clases EST_UC1_0k.pdf", tipo: "pdf", tam: "66 KB", fecha: "2026-07-24", ruta: "documentos/planificacion/Plan de clases EST_UC1_0k.pdf" },
+        { nombre: "PC1_Est_legalizado.pdf", tipo: "pdf", tam: "66 KB", fecha: "2026-07-24", ruta: "documentos/planificacion/PC1_Est_legalizado.pdf" },
       ],
     },
     {
