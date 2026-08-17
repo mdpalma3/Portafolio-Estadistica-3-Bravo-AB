@@ -116,7 +116,7 @@ const DATOS_PORTAFOLIO = {
       titulo: "ESTADÍSTICA DESCRIPTIVA Y PROBABILIDAD APLICADAS A LAS CIENCIAS NAVALES",
       resumen: "Organiza, resume e interpreta información proveniente de operaciones navales mediante técnicas de estadística descriptiva y probabilidad para generar indicadores que apoyen la toma de decisiones.",
       carpetas: {
-        presentaciones: [{ nombre: "U1_Introduccion_Estadistica.pdf", tipo: "pdf", tam: "1.2 MB", fecha: "2026-03-09" }],
+        presentaciones: [{ nombre: "1.1_Sílabo_Estadística_2026_-signed-signed.pdf", tipo: "pdf", tam: "482 KB", fecha: "2026-03-02", ruta: "documentos/planificacion/1.1_Sílabo_Estadística_2026_-signed-signed.pdf" }],
         guias: [{ nombre: "U1_Guia_Medidas_Tendencia.docx", tipo: "word", tam: "220 KB", fecha: "2026-03-11" }],
         talleres: [{ nombre: "U1_Taller_Frecuencias.pdf", tipo: "pdf", tam: "310 KB", fecha: "2026-03-13" }],
         videos: [{ nombre: "Video: Medidas de tendencia central", tipo: "enlace", tam: "—", fecha: "2026-03-10" }],
