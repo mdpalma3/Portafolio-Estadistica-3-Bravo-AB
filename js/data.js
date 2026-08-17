@@ -117,7 +117,7 @@ const DATOS_PORTAFOLIO = {
       resumen: "Organiza, resume e interpreta información proveniente de operaciones navales mediante técnicas de estadística descriptiva y probabilidad para generar indicadores que apoyen la toma de decisiones.",
       carpetas: {
         presentaciones: [
-           { nombre: "1_INTRODUCCION.pdf", tipo: "pdf", tam: "482 KB", fecha: "2026-03-02", ruta: "documentos/planificacion/1_INTRODUCCION.pdf" }
+           { nombre: "1_INTRODUCCION.pdf", tipo: "pdf", tam: "482 KB", fecha: "2026-03-02", ruta: "documentos/planificacion/1_INTRODUCCION.pdf" },
            { nombre: "2_MUESTREO PARTE 1.pdf", tipo: "pdf", tam: "482 KB", fecha: "2026-03-02", ruta: "documentos/planificacion/2_MUESTREO PARTE 1.pdf" }
         ],
         guias: [{ nombre: "U1_Guia_Medidas_Tendencia.docx", tipo: "word", tam: "220 KB", fecha: "2026-03-11" }],
